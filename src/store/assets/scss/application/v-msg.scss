@@ -1,0 +1,157 @@
+.v-msg-container {
+	position: fixed;
+	z-index: 10000;
+	width: 360px;
+	padding-left: 10px;
+	padding-right: 10px;
+  }
+
+  .v-msg-top-right {
+	top: 10px;
+	right: 0;
+  }
+
+  .v-msg-top-left {
+	top: 10px;
+	left: 0;
+  }
+
+  .v-msg-bottom-left {
+	bottom: 10px;
+	left: 0;
+  }
+
+  .v-msg-bottom-right {
+	bottom: 10px;
+	right: 0;
+  }
+
+  .v-msg-top-center, .v-msg-bottom-center, .v-msg-alert {
+	left: 50%;
+	margin-left: -180px;
+  }
+
+  .v-msg-top-center {
+	top: 10px;
+  }
+
+  .v-msg-bottom-center {
+	bottom: 10px;
+  }
+
+  .v-msg-alert{
+	top: 20%;
+
+  }
+  .v-msg-box {
+	/* margin-bottom: 10px;
+
+	border: 1px solid #454d5d;
+	border-radius: 5px;
+	color: #fff;
+	display: block;
+	padding: 1rem;
+	background: rgba(69, 77, 93, 0.9);
+	border-color: #454d5d; */
+	display: block;
+	padding: 12px 20px;
+	margin-bottom: 1rem;
+	border: 1px solid transparent;
+	border-radius: 0.215rem;
+	transition: all 0.3s ease;
+	background: #fff;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  }
+
+  h6.v-msg-title {
+	font-weight: bold;
+	margin: 0;
+	margin-bottom: 5px;
+	font-size: 1rem;
+  }
+
+  .v-msg-alert .v-msg-title{
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+  }
+
+  .v-msg-alert .v-msg-content{
+	/* padding-top: 10px; */
+	padding-bottom: 10px;
+  }
+  .v-msg-alert .btn{
+	min-width: 90px;
+  }
+  .float-right{
+	float: right !important;
+  }
+  .v-notify-success {
+	color:#FFF;
+	background-color: $green;
+  }
+
+  .v-notify-success .close {
+	color: #FFF;
+  }
+
+  .v-notify-success .close:hover, .v-notify-success .close:focus {
+	color: #FFF;
+  }
+
+  .v-notify-info {
+	color: #FFF;
+	background-color: $blue;
+  }
+
+  .v-notify-info .close {
+	color: #FFF;
+  }
+
+  .v-notify-info .close:hover, .v-notify-info .close:focus {
+	color: #FFF;
+  }
+
+  .v-notify-warning {
+	color: #FFF;
+	background-color: $orange;
+  }
+
+  .v-notify-warning .close {
+	color: #FFF;
+  }
+
+  .v-notify-warning .close:hover, .v-notify-warning .close:focus {
+	color: #FFF;
+  }
+
+  .v-notify-error {
+	color: #FFF;
+	background-color: $red;
+  }
+
+  .v-notify-error .close {
+	color: #FFF;
+  }
+
+  .v-notify-error .close:hover, .v-notify-error .close:focus {
+	color: #FFF;
+  }
+
+  .v-msg-backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1600;
+	background-color: #000;
+	opacity: 0.5;
+  }
+
+
+  @media (max-width: 360px) {
+	.v-notify-container {
+	  width: 100%;
+	}
+  }

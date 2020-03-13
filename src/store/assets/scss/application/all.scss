@@ -1,0 +1,139 @@
+@media (max-width: 768px) {
+	.table-responsive > table {
+		min-width: 700px
+    }
+
+    .no-max > table {
+        min-width: auto !important;
+    }
+}
+
+.modal-backdrop {
+	opacity: $modal-backdrop-opacity !important;
+	-webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 0.5s; /* Firefox < 16 */
+        -ms-animation: fadein 0.5s; /* Internet Explorer */
+         -o-animation: fadein 0.5s; /* Opera < 12.1 */
+            animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: $modal-backdrop-opacity; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: $modal-backdrop-opacity; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: $modal-backdrop-opacity; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: $modal-backdrop-opacity; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: $modal-backdrop-opacity; }
+}
+
+.conteudo-sistema {
+    padding: 20px
+}
+
+.sys-table {
+    margin-bottom: 0px !important;
+}
+
+.sys-table tbody tr td {
+    border-bottom: 1px solid rgba(9, 30, 66, 0.1) !important;
+}
+
+.sys-table thead th {
+    background: $backgroundCabecalhoTabela;
+    color: $fontColorCabecalhoTabela;
+
+    a {
+        display: inline-flex;
+		align-items: center;
+
+
+        svg {
+            margin-right: 0.4em
+        }
+	}
+}
+
+.iphone-x-top {
+
+	/* Status bar height on iOS 11.0 */
+    margin-top: constant(safe-area-inset-top);
+    /* Status bar height on iOS 11+ */
+	margin-top: env(safe-area-inset-top);
+}
+
+.iphone-x-bottom {
+
+	/* Status bar height on iOS 11.0 */
+    margin-top: constant(safe-area-inset-bottom);
+    /* Status bar height on iOS 11+ */
+	margin-top: env(safe-area-inset-bottom);
+}
+
+.fl-cabecalho {
+    color: $fontColorCabecalhoCadastro;
+    /* Status bar height on iOS 11.0 */
+    margin-top: constant(safe-area-inset-top);
+    /* Status bar height on iOS 11+ */
+    margin-top: env(safe-area-inset-top);
+}
+
+.pagination-margin {
+    margin:0px;
+    margin-top:2em !important
+}
+
+svg {
+	margin-top: -0.1em;
+}
+
+
+.mx-input-append {
+    position: absolute;
+    top: 3px !important;
+    right: 0;
+    width: 30px;
+    height: 1.2rem !important;
+    padding: 0px !important;
+    background-color: transparent !important;
+    background-clip: content-box;
+}
+
+a.fechar-modal {
+    font-size: 1.2rem;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #DDD;
+    color: #000;
+
+    svg {
+        float: left;
+        margin-left: 13px;
+        margin-top: 10px;
+    }
+}
+
+.fechar-modal:hover {
+    color:#FFF;
+    background:$blue;
+}
