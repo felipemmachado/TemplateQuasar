@@ -27,6 +27,7 @@ import {
   QCardActions,
   Notify,
   Loading,
+  Dialog,
 } from 'quasar';
 
 Vue.use(Quasar, {
@@ -57,6 +58,7 @@ Vue.use(Quasar, {
   plugins: {
     Notify,
     Loading,
+    Dialog,
   },
   lang,
 });
