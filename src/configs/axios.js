@@ -1,4 +1,4 @@
-import { axios } from 'axios';
+import axios from 'axios';
 import local from './local-storage';
 
 // Add a request interceptor
@@ -37,8 +37,6 @@ axios.interceptors.response.use((response) => {
   return response;
 },
 (error) => {
-  // $vue.$notify.loadOut();
-
   // não autorizado
   if (error.request.status === 401) {
     // $vue._sair();

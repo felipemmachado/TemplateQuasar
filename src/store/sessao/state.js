@@ -1,5 +1,4 @@
 export default {
-	user: null,
-	config: null,
-	baseURL: null,
-}
+  user: null,
+  config: null,
+};

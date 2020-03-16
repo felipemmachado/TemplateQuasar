@@ -1,4 +1,4 @@
 export default {
-	timezones: [],
-	list: [],
-}
+  timezones: [],
+  list: [],
+};

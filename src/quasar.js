@@ -26,6 +26,7 @@ import {
   QForm,
   QCardActions,
   Notify,
+  Loading,
 } from 'quasar';
 
 Vue.use(Quasar, {
@@ -55,6 +56,7 @@ Vue.use(Quasar, {
   },
   plugins: {
     Notify,
+    Loading,
   },
   lang,
 });

@@ -6,9 +6,10 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/login',
-    name: 'Login',
+    path: '/login/:hash?',
+    name: 'login',
     component: Login,
+    props: true,
   },
   {
     path: '/',

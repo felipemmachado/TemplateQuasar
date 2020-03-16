@@ -4,7 +4,7 @@ import storage from '../../configs/local-storage';
 export default {
   SET_SESSION(state, token) {
     if (token == null) {
-      sessionStorage.removeItem(storage.localSession);
+      sessionStorage.removeItem(storage.localSessao);
       state.user = null;
     } else {
       const dados = jwt(token);
@@ -22,20 +22,11 @@ export default {
       state.user = user;
 
       const string = JSON.stringify(user);
-      sessionStorage.setItem(storage.localSession, string);
+      sessionStorage.setItem(storage.localSessao, string);
     }
   },
 
-  SET_BASE_URL(state, baseURL) {
-    const string = JSON.stringify(baseURL);
-    sessionStorage.setItem(storage.localBaseURL, string);
-    state.baseURL = baseURL;
-  },
-
-
   SET_CONFIG(state, config) {
-    console.log('set', config);
-
     const string = JSON.stringify(config);
     sessionStorage.setItem(storage.localConfig, string);
     state.config = config;
