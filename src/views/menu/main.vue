@@ -80,7 +80,7 @@
     </q-drawer>
 
     <q-page-container>
-      <!-- <HelloWorld /> -->
+      <router-view></router-view>
     </q-page-container>
   </q-layout>
 </template>
